@@ -1,7 +1,7 @@
 {
   "Index": {
-    "meta_title": "SaaS Template - The perfect SaaS template to build and scale your business with ease.",
-    "meta_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS."
+    "meta_title": "OCL Network - The Trust Layer for Healthcare AI",
+    "meta_description": "Deploy, fine-tune, and govern clinical AI agents with confidence. Built for scale with cloud-agnostic infrastructure and automated policy enforcement."
   },
   "Navbar": {
     "sign_in": "Sign In",
@@ -13,26 +13,31 @@
     "company": "Company"
   },
   "Hero": {
-    "follow_twitter": "Follow @Ixartz on Twitter",
-    "title": "The perfect <important>SaaS template</important> to build and scale your business with ease.",
-    "description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS.",
-    "primary_button": "Get Started",
-    "secondary_button": "Star on GitHub"
+    "follow_twitter": "Built for Scale",
+    "title": "The <important>Trust Layer</important> for Healthcare AI",
+    "description": "Deploy, fine-tune, and govern clinical AI agents with confidence. Enable AI agents to collaborate with care teams at scale—supporting both elite engineering teams and no-code fine-tuning for clinical reasoning customization.",
+    "primary_button": "Schedule a Demo",
+    "secondary_button": "Learn About Open City Labs"
   },
   "Sponsors": {
     "title": "Sponsored by"
   },
   "Features": {
-    "section_subtitle": "Features",
-    "section_title": "Unlock the Full Potential of the SaaS Template",
-    "section_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS.",
-    "feature1_title": "Node.js",
-    "feature2_title": "React",
-    "feature3_title": "Tailwind CSS",
-    "feature4_title": "TypeScript",
-    "feature5_title": "Shadcn UI",
-    "feature6_title": "ESLint",
-    "feature_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS."
+    "section_subtitle": "Core Capabilities",
+    "section_title": "Enterprise-Grade AI Infrastructure for Healthcare",
+    "section_description": "From synthetic data to real-world deployment, maintain consistent governance throughout the entire AI lifecycle with cloud-agnostic infrastructure and automated policy enforcement.",
+    "feature1_title": "Fine-Tune 100+ Models",
+    "feature1_description": "Train and customize leading foundation models including Llama, Qwen, DeepSeek, and Mistral with no-code fine-tuning interface and pre-configured clinical reasoning templates.",
+    "feature2_title": "Cloud-Agnostic Deployment",
+    "feature2_description": "Deploy across AWS, Azure, GCP, or on-premises infrastructure with SPIFFE/SPIRE identity management and maintain data sovereignty wherever your data lives.",
+    "feature3_title": "Unified Governance",
+    "feature3_description": "Convert legal and compliance rules into executable policy-as-code with version control, distributed system consistency, and eliminate manual compliance overhead.",
+    "feature4_title": "Privacy-Preserving Benchmarks",
+    "feature4_description": "Automatic safety benchmarking with MedHELM and DoNOHARM standards, ensuring clinical AI agents meet regulatory requirements before deployment.",
+    "feature5_title": "Multi-Agent Collaboration",
+    "feature5_description": "Enable secure AI agent collaboration across institutions without centralizing data, supporting federated research and cross-organizational workflows.",
+    "feature6_title": "Full Data Provenance",
+    "feature6_description": "Comprehensive audit logging and lineage tracking for FDA reporting, with complete traceability from training data to production predictions."
   },
   "Pricing": {
     "section_subtitle": "Features",
@@ -61,9 +66,9 @@
     "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam enim dui, id consequat turpis ullamcorper ac. Mauris id quam dolor. Nullam eu egestas turpis. Proin risus elit, sollicitudin in mi a, accumsan euismod turpis. In euismod mi sed diam tristique hendrerit."
   },
   "CTA": {
-    "title": "You are ready?",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "button_text": "Star on GitHub"
+    "title": "Ready to Deploy Trustworthy AI?",
+    "description": "Join health systems, AI startups, and researchers building the future of clinical AI with automated governance and enterprise-grade infrastructure.",
+    "button_text": "Schedule a Demo"
   },
   "Footer": {
     "product": "Product",
@@ -73,7 +78,7 @@
     "company": "Company",
     "terms_of_service": "Terms Of Service",
     "privacy_policy": "Privacy Policy",
-    "designed_by": "Designed by <author></author>."
+    "designed_by": "© 2026 Open City Labs"
   },
   "ProtectFallback": {
     "not_enough_permission": "You do not have the permissions to perform this action"
