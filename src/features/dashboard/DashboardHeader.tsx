@@ -3,6 +3,8 @@
 import Link from 'next/link';
 
 import { ActiveLink } from '@/components/ActiveLink';
+import { OrganizationSwitcher } from '@/components/auth/OrganizationSwitcher';
+import { UserButton } from '@/components/auth/UserButton';
 import { LocaleSwitcher } from '@/components/LocaleSwitcher';
 import { ToggleMenuButton } from '@/components/ToggleMenuButton';
 import {
@@ -39,10 +41,7 @@ export const DashboardHeader = (props: {
           <path d="M17 5 7 19" />
         </svg>
 
-        {/* TODO: Add custom organization switcher in Phase 4 */}
-        <div className="px-3 py-1 text-sm text-muted-foreground">
-          Organization
-        </div>
+        <OrganizationSwitcher />
 
         <nav className="ml-3 max-lg:hidden">
           <ul className="flex flex-row items-center gap-x-3 text-lg font-medium [&_a:hover]:opacity-100 [&_a]:opacity-75">
@@ -85,10 +84,7 @@ export const DashboardHeader = (props: {
           </li>
 
           <li>
-            {/* TODO: Add custom user button in Phase 4 */}
-            <div className="px-2 py-1.5 text-sm text-muted-foreground">
-              User
-            </div>
+            <UserButton />
           </li>
         </ul>
       </div>
