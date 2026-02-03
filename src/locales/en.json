@@ -94,6 +94,7 @@
   },
   "DashboardLayout": {
     "home": "Home",
+    "benchmarks": "Benchmarks",
     "todos": "Todos",
     "members": "Members",
     "billing": "Billing",
@@ -168,5 +169,52 @@
     "message_title": "Message",
     "message_description": "Enter a detailed message for your todo.",
     "submit_button": "Submit"
+  },
+  "Benchmarks": {
+    "title": "AI Benchmarks",
+    "description": "Run comprehensive evaluations across medical, academic, and biomedical benchmarks",
+    "select_benchmarks": "Select Benchmarks",
+    "select_model": "Select Model",
+    "sample_limit": "Sample Limit",
+    "run_benchmarks": "Run Benchmarks",
+    "running": "Running..."
+  },
+  "BenchmarkSelector": {
+    "quick_select": "Quick Select",
+    "bigbio_subcategories": "BigBIO Task Types",
+    "detailed_selection": "Detailed Selection",
+    "selection_summary": "Selection Summary",
+    "none_selected": "No benchmarks selected",
+    "bigbio_info": "Select BigBIO subcategories above or use the 'BigBIO (20)' quick select button to run all 20 benchmarks."
+  },
+  "ModelSelector": {
+    "loading": "Loading models...",
+    "error": "Error loading models",
+    "select_placeholder": "Select a model"
+  },
+  "BenchmarkProgress": {
+    "title": "Benchmark Progress",
+    "progress": "Progress",
+    "started_at": "Started",
+    "completed_at": "Completed",
+    "running": "Running",
+    "completed": "Completed",
+    "failed": "Failed",
+    "running_message": "Benchmarks are running. This may take several minutes...",
+    "completed_message": "All benchmarks completed successfully!",
+    "failed_message": "Benchmark run failed. Please try again."
+  },
+  "BenchmarkResults": {
+    "title": "Results",
+    "benchmark": "Benchmark",
+    "model": "Model",
+    "score": "Score",
+    "accuracy": "Accuracy",
+    "timestamp": "Timestamp",
+    "show_history": "Show History",
+    "hide_history": "Hide History",
+    "export_csv": "Export CSV",
+    "export_json": "Export JSON",
+    "no_results": "No results yet. Run benchmarks to see results."
   }
 }
