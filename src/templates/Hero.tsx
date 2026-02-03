@@ -27,7 +27,7 @@ export const Hero = () => {
           <div className="flex flex-col items-center gap-2">
             <a
               className="inline-flex h-11 items-center justify-center rounded-md bg-[#00A651] px-8 text-base font-medium text-white shadow transition-colors hover:bg-[#008F45] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-              href="https://calendly.com/opencitylabs/demo"
+              href="/waitlist"
             >
               {t('primary_button')}
             </a>
