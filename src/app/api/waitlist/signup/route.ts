@@ -48,10 +48,13 @@ export async function POST(request: NextRequest) {
 
     // Get HubSpot credentials from environment
     const hubspotAccessToken = process.env.HUBSPOT_ACCESS_TOKEN;
-    const hubspotListId = process.env.HUBSPOT_WAITLIST_LIST_ID;
 
     if (!hubspotAccessToken) {
       console.error('HubSpot access token not configured');
+      console.error('Environment check:', {
+        hasToken: !!process.env.HUBSPOT_ACCESS_TOKEN,
+        hasListId: !!process.env.HUBSPOT_WAITLIST_LIST_ID,
+      });
       // Still return success to user but log the error
       return NextResponse.json(
         {
@@ -62,6 +65,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // eslint-disable-next-line no-console
+    console.log('Processing waitlist signup:', { email, firstName, lastName });
+
     // Step 1: Create or update contact in HubSpot
     const contactData = {
       properties: {
@@ -70,6 +76,10 @@ export async function POST(request: NextRequest) {
         lastname: lastName,
         company,
         jobtitle: role,
+        // Set lead status to NEW so contact appears in waitlist segment
+        hs_lead_status: 'NEW',
+        // Set lifecycle stage to lead
+        lifecyclestage: 'lead',
         // Custom property for use case (you'll need to create this in HubSpot)
         use_case: useCase || '',
         // Add a custom property to track waitlist status
@@ -149,29 +159,18 @@ export async function POST(request: NextRequest) {
     } else {
       const contactResponseData = await contactResponse.json();
       contactId = contactResponseData.id;
+      // eslint-disable-next-line no-console
+      console.log('HubSpot contact created successfully:', {
+        contactId,
+        email,
+        url: contactResponseData.url,
+      });
     }
 
-    // Step 2: Add contact to waitlist list (if list ID is configured)
-    if (hubspotListId && contactId) {
-      try {
-        await fetch(
-          `https://api.hubapi.com/crm/v3/lists/${hubspotListId}/memberships/add`,
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'Authorization': `Bearer ${hubspotAccessToken}`,
-            },
-            body: JSON.stringify({
-              recordIdsToAdd: [contactId],
-            }),
-          },
-        );
-      } catch (listError) {
-        console.error('Failed to add contact to list:', listError);
-        // Don't fail the request if list addition fails
-      }
-    }
+    // Step 2: Contact will automatically appear in your HubSpot segment
+    // Because we set hs_lead_status = "NEW", the contact matches your segment filter:
+    // "Waitlist_AlignHealthcareAI" (Lead status is NEW)
+    // HubSpot will add it to the segment automatically (usually within 1-2 seconds)
 
     // Step 3: (Optional) Trigger HubSpot workflow
     // If you have a workflow set up in HubSpot that sends welcome emails,
