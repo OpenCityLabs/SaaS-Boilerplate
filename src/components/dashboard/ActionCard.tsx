@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export type ActionCardProps = {
-  icon: string;
+  icon: React.ReactNode;
   title: string;
   description: string;
   href?: string;
@@ -25,31 +25,34 @@ export const ActionCard: React.FC<ActionCardProps> = ({
   const cardContent = (
     <div
       className={`
-        h-full min-h-[280px] rounded-lg border-2 bg-white p-4
-        text-center transition-all duration-200
+        h-full rounded-xl border border-border bg-card p-5
+        transition-all duration-200
         ${disabled
-      ? 'cursor-not-allowed border-gray-300 opacity-60'
-      : 'cursor-pointer border-border hover:scale-[1.02] hover:border-primary hover:shadow-lg'
+      ? 'cursor-not-allowed opacity-60'
+      : 'cursor-pointer hover:border-primary hover:shadow-lg'
     }
       `}
     >
-      <div className="flex h-full flex-col items-center justify-center">
-        <div className="mb-4 text-6xl">{icon}</div>
-        <div className="mb-4 flex flex-col items-center gap-2">
-          <h3 className="text-xl font-bold leading-tight text-foreground">
-            {title}
-          </h3>
+      <div className="flex h-full flex-col">
+        <div className="size-12 rounded-lg bg-gradient-to-br from-blue-700 via-blue-500 to-blue-300 p-2 [&_svg]:stroke-white [&_svg]:stroke-2">
+          {icon}
+        </div>
+
+        <div className="mt-3 flex items-center justify-between gap-2">
+          <div className="text-lg font-bold">{title}</div>
           {badge !== undefined && (
-            <span className="rounded-full bg-primary px-2.5 py-1 text-xs font-semibold text-primary-foreground">
+            <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-800">
               {badge}
             </span>
           )}
         </div>
-        <p className="text-base text-muted-foreground">
-          {description}
-        </p>
+
+        <div className="my-3 w-8 border-t border-blue-400" />
+
+        <div className="text-sm text-muted-foreground">{description}</div>
+
         {disabled && (
-          <div className="mt-auto pt-4">
+          <div className="mt-auto pt-4 text-center">
             <span className="text-xs italic text-gray-500">Coming soon</span>
           </div>
         )}
