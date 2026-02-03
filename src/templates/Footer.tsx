@@ -80,7 +80,7 @@ export const Footer = () => {
               <Link href="/terms-of-service">{t('terms_of_service')}</Link>
             </li>
             <li>
-              <Link href="/terms-of-service">{t('privacy_policy')}</Link>
+              <Link href="/privacy-policy">{t('privacy_policy')}</Link>
             </li>
           </>
         )}
