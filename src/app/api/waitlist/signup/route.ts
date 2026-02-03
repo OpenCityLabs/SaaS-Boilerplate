@@ -27,7 +27,7 @@ import { NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, email, company, role, useCase } = body;
+    const { firstName, lastName, email, company, role } = body;
 
     // Validate required fields
     if (!firstName || !lastName || !email || !company || !role) {
@@ -80,12 +80,6 @@ export async function POST(request: NextRequest) {
         hs_lead_status: 'NEW',
         // Set lifecycle stage to lead
         lifecyclestage: 'lead',
-        // Custom property for use case (you'll need to create this in HubSpot)
-        use_case: useCase || '',
-        // Add a custom property to track waitlist status
-        waitlist_status: 'pending',
-        // Track signup date
-        waitlist_signup_date: new Date().toISOString(),
       },
     };
 
