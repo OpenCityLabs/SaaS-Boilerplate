@@ -76,10 +76,8 @@ export async function POST(request: NextRequest) {
         lastname: lastName,
         company,
         jobtitle: role,
-        // Set lead status to NEW so contact appears in waitlist segment
-        hs_lead_status: 'NEW',
-        // Set lifecycle stage to lead
-        lifecyclestage: 'lead',
+        // Set custom property for AlignHealthcare.AI waitlist
+        waitlist_status__alignhealthcareai: 'True',
       },
     };
 
@@ -162,8 +160,8 @@ export async function POST(request: NextRequest) {
     }
 
     // Step 2: Contact will automatically appear in your HubSpot segment
-    // Because we set hs_lead_status = "NEW", the contact matches your segment filter:
-    // "Waitlist_AlignHealthcareAI" (Lead status is NEW)
+    // Because we set waitlist_status__alignhealthcareai = "True", the contact matches your segment filter:
+    // "Waitlist Status - AlignHealthcare.AI = True"
     // HubSpot will add it to the segment automatically (usually within 1-2 seconds)
 
     // Step 3: (Optional) Trigger HubSpot workflow
