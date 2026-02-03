@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl';
 
 import { badgeVariants } from '@/components/ui/badgeVariants';
-import { buttonVariants } from '@/components/ui/buttonVariants';
 import { CenteredHero } from '@/features/landing/CenteredHero';
 import { Section } from '@/features/landing/Section';
 
@@ -9,7 +8,7 @@ export const Hero = () => {
   const t = useTranslations('Hero');
 
   return (
-    <Section className="py-36">
+    <Section className="pb-12 pt-36">
       <CenteredHero
         banner={(
           <span className={`${badgeVariants()} px-5 py-2 !text-2xl`}>
@@ -25,21 +24,12 @@ export const Hero = () => {
         })}
         description={t.raw('description')}
         buttons={(
-          <>
-            <a
-              className={buttonVariants({ size: 'lg' })}
-              href="https://calendly.com/opencitylabs/demo"
-            >
-              {t('primary_button')}
-            </a>
-
-            <a
-              className={buttonVariants({ variant: 'outline', size: 'lg' })}
-              href="https://opencitylabs.com"
-            >
-              {t('secondary_button')}
-            </a>
-          </>
+          <a
+            className="inline-flex h-11 items-center justify-center rounded-md bg-[#00A651] px-8 text-base font-medium text-white shadow transition-colors hover:bg-[#008F45] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+            href="https://calendly.com/opencitylabs/demo"
+          >
+            {t('primary_button')}
+          </a>
         )}
       />
     </Section>
