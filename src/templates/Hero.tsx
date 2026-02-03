@@ -23,7 +23,7 @@ export const Hero = () => {
             </span>
           ),
         })}
-        description={t('description')}
+        description={t.raw('description')}
         buttons={(
           <>
             <a
