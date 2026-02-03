@@ -18,6 +18,19 @@ export default function SignInPage() {
   const [twoFactorMethod, setTwoFactorMethod] = useState('');
   const { verify2FA } = useAuth();
 
+  const checkOnboardingStatus = async () => {
+    try {
+      const response = await fetch('/api/onboarding/status');
+      if (response.ok) {
+        const data = await response.json();
+        return data.completed || false;
+      }
+    } catch (error) {
+      console.error('Failed to check onboarding status:', error);
+    }
+    return true; // Default to assuming completed if check fails
+  };
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -31,8 +44,14 @@ export default function SignInPage() {
         setUserId(result.user_id || '');
         setTwoFactorMethod(result.two_factor_method || '');
       } else if (result.success) {
-        // Login successful, redirect to dashboard
-        router.push('/dashboard');
+        // Check if onboarding is completed
+        const onboardingCompleted = await checkOnboardingStatus();
+
+        if (onboardingCompleted) {
+          router.push('/dashboard');
+        } else {
+          router.push('/onboarding');
+        }
       }
     } finally {
       setLoading(false);
@@ -47,7 +66,14 @@ export default function SignInPage() {
       const success = await verify2FA(userId, twoFactorCode);
 
       if (success) {
-        router.push('/dashboard');
+        // Check if onboarding is completed
+        const onboardingCompleted = await checkOnboardingStatus();
+
+        if (onboardingCompleted) {
+          router.push('/dashboard');
+        } else {
+          router.push('/onboarding');
+        }
       }
     } finally {
       setLoading(false);

@@ -1,8 +1,10 @@
 'use client';
 
+import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
 export default function SignUpPage() {
+  const router = useRouter();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
@@ -47,24 +49,40 @@ export default function SignUpPage() {
       <div className="flex min-h-screen items-center justify-center">
         <div className="w-full max-w-md space-y-8 rounded-lg border bg-card p-8 shadow-lg">
           <div className="text-center">
+            <div className="mx-auto mb-4 flex size-16 items-center justify-center rounded-full bg-green-100">
+              <svg
+                className="size-8 text-green-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+            </div>
             <h2 className="text-2xl font-bold text-green-600">
-              Registration Successful!
+              Account Created Successfully!
             </h2>
             <p className="mt-4 text-sm text-muted-foreground">
-              Please check your email to verify your account.
-            </p>
-            <p className="mt-2 text-sm text-muted-foreground">
-              After verification, you can
-              {' '}
-              <a
-                href="/sign-in"
-                className="font-medium text-primary hover:underline"
-              >
-                sign in
-              </a>
-              .
+              Your account has been created. Let's get you set up.
             </p>
           </div>
+
+          <button
+            type="button"
+            onClick={() => router.push('/sign-in')}
+            className="w-full rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90"
+          >
+            Continue to Sign In
+          </button>
+
+          <p className="text-center text-xs text-muted-foreground">
+            You'll complete onboarding after signing in
+          </p>
         </div>
       </div>
     );

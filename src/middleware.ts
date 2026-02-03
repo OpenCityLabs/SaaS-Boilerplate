@@ -11,7 +11,7 @@ const intlMiddleware = createMiddleware({
 });
 
 // Routes that require authentication
-const protectedRoutes = ['/dashboard'];
+const protectedRoutes = ['/dashboard', '/onboarding'];
 
 // Routes that should always be public (no auth required)
 const publicRoutes = ['/', '/terms-of-service', '/privacy-policy', '/forgot-password', '/reset-password'];
