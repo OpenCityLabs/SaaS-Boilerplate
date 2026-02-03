@@ -13,8 +13,21 @@ const intlMiddleware = createMiddleware({
 // Routes that require authentication
 const protectedRoutes = ['/dashboard'];
 
+// Routes that should always be public (no auth required)
+const publicRoutes = ['/', '/terms-of-service', '/privacy-policy'];
+
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  // Check if the route is explicitly public
+  const isPublicRoute = publicRoutes.some(route =>
+    pathname === route || pathname.endsWith(route),
+  );
+
+  // Public routes should always be accessible
+  if (isPublicRoute) {
+    return intlMiddleware(request);
+  }
 
   // Check if the route is protected
   const isProtectedRoute = protectedRoutes.some(route =>
