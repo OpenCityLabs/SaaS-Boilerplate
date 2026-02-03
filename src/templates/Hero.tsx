@@ -12,7 +12,7 @@ export const Hero = () => {
     <Section className="py-36">
       <CenteredHero
         banner={(
-          <span className={badgeVariants()}>
+          <span className={`${badgeVariants()} px-5 py-2 !text-2xl`}>
             {t('follow_twitter')}
           </span>
         )}

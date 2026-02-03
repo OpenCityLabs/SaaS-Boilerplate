@@ -7,13 +7,13 @@ export const CenteredHero = (props: {
   <>
     <div className="text-center">{props.banner}</div>
 
-    <div className="mt-3 text-center text-5xl font-bold tracking-tight">
+    <div className="mt-3 text-center text-6xl font-bold tracking-tight">
       {props.title}
     </div>
 
-    <div className="mx-auto mt-5 max-w-screen-md text-center text-xl text-muted-foreground">
+    <div className="mx-auto mt-5 max-w-screen-md text-center text-2xl text-muted-foreground">
       {props.description.split('\n').map((line, index) => (
-        <div key={index}>{line}</div>
+        <div key={index} className={index > 0 ? 'mt-3' : ''} dangerouslySetInnerHTML={{ __html: line }} />
       ))}
     </div>
 
