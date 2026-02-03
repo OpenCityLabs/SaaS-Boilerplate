@@ -49,3 +49,6 @@ local
 
 # vercel
 .vercel
+
+# HubSpot config file
+hubspot.config.yml
