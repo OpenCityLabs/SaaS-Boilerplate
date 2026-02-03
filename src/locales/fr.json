@@ -13,11 +13,12 @@
     "company": "Entreprise"
   },
   "Hero": {
-    "follow_twitter": "Suivez @Ixartz sur Twitter",
-    "title": "Le parfait <important>SaaS template</important> pour construire et mettre à l'échelle votre entreprise en toute simplicité.",
-    "description": "Un template gratuit et open-source de landing page pour votre entreprise SaaS, construit avec React, TypeScript, Shadcn UI et Tailwind CSS.",
-    "primary_button": "Démarrer",
-    "secondary_button": "Mettez une étoile sur GitHub"
+    "follow_twitter": "Conçu pour l'Échelle",
+    "title": "La Couche de <important>Confiance</important> pour l'IA de Santé",
+    "description": "Déployez, affinez et gouvernez les agents IA cliniques <strong class=\"font-bold text-foreground\">en toute confiance</strong>.\nPermettez aux agents IA de collaborer avec les équipes de soins à grande échelle.\nSupporte les équipes d'ingénierie d'élite et l'affinage sans code.",
+    "primary_button": "Inscrivez-vous sur la liste d'attente!",
+    "button_subtext": "Les 100 premiers obtiennent un compte gratuit!",
+    "secondary_button": "En savoir plus sur Open City Labs"
   },
   "Sponsors": {
     "title": "Sponsorisé par"
