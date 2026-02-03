@@ -14,7 +14,7 @@ const intlMiddleware = createMiddleware({
 const protectedRoutes = ['/dashboard'];
 
 // Routes that should always be public (no auth required)
-const publicRoutes = ['/', '/terms-of-service', '/privacy-policy'];
+const publicRoutes = ['/', '/terms-of-service', '/privacy-policy', '/forgot-password', '/reset-password'];
 
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
