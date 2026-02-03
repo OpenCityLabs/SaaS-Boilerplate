@@ -32,11 +32,11 @@
     "feature2_description": "Deploy across AWS, Azure, GCP, or on-premises infrastructure with SPIFFE/SPIRE identity management and maintain data sovereignty wherever your data lives.",
     "feature3_title": "Unified Governance",
     "feature3_description": "Convert legal and compliance rules into executable policy-as-code with version control, distributed system consistency, and eliminate manual compliance overhead.",
-    "feature4_title": "Privacy-Preserving Benchmarks",
+    "feature4_title": "Rapidly Run Benchmarks",
     "feature4_description": "Automatic safety benchmarking with MedHELM and DoNOHARM standards, ensuring clinical AI agents meet regulatory requirements before deployment.",
     "feature5_title": "Multi-Agent Collaboration",
     "feature5_description": "Enable secure AI agent collaboration across institutions without centralizing data, supporting federated research and cross-organizational workflows.",
-    "feature6_title": "Full Data Provenance",
+    "feature6_title": "Build Client Trust",
     "feature6_description": "Comprehensive audit logging and lineage tracking for FDA reporting, with complete traceability from training data to production predictions."
   },
   "Pricing": {

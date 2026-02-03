@@ -8,7 +8,7 @@ export const Hero = () => {
   const t = useTranslations('Hero');
 
   return (
-    <Section className="pb-12 pt-36">
+    <Section className="pb-24 pt-36">
       <CenteredHero
         banner={(
           <span className={`${badgeVariants()} px-5 py-2 !text-2xl`}>
@@ -17,7 +17,7 @@ export const Hero = () => {
         )}
         title={t.rich('title', {
           important: chunks => (
-            <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-700 via-blue-500 to-blue-300 bg-clip-text text-transparent">
               {chunks}
             </span>
           ),

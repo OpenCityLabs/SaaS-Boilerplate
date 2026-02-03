@@ -33,7 +33,7 @@ export const Navbar = () => {
         )}
       >
         <li>
-          <Link href="/sign-up">{t('product')}</Link>
+          <a href="#core-capabilities">{t('product')}</a>
         </li>
 
         <li>

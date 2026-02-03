@@ -8,7 +8,7 @@ export const Features = () => {
   const t = useTranslations('Features');
 
   return (
-    <Background>
+    <Background id="core-capabilities">
       <Section
         subtitle={t('section_subtitle')}
         title={t('section_title')}
