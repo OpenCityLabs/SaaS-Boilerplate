@@ -23,16 +23,21 @@
     "title": "Sponsorisé par"
   },
   "Features": {
-    "section_subtitle": "Fonctionnalités",
-    "section_title": "Débloquer le plein potentiel du SaaS Template",
-    "section_description": "Un template gratuit et open-source de landing page pour votre entreprise SaaS, construit avec React, TypeScript, Shadcn UI et Tailwind CSS.",
-    "feature1_title": "Node.js",
-    "feature2_title": "React",
-    "feature3_title": "Tailwind CSS",
-    "feature4_title": "TypeScript",
-    "feature5_title": "Shadcn UI",
-    "feature6_title": "ESLint",
-    "feature_description": "Un template gratuit et open-source de landing page pour votre entreprise SaaS, construit avec React, TypeScript, Shadcn UI et Tailwind CSS."
+    "section_subtitle": "Capacités Principales",
+    "section_title": "Infrastructure IA de Niveau Entreprise pour la Santé",
+    "section_description": "Des données synthétiques au déploiement réel, maintenez une gouvernance cohérente tout au long du cycle de vie de l'IA avec une infrastructure agnostique au cloud et une application automatique des politiques.",
+    "feature1_title": "Affinez plus de 100 modèles",
+    "feature1_description": "Entraînez et personnalisez les principaux modèles de fondation, y compris Llama, Qwen, DeepSeek et Mistral avec une interface de réglage fin sans code et des modèles de raisonnement clinique préconfigurés.",
+    "feature2_title": "Déploiement Agnostique au Cloud",
+    "feature2_description": "Déployez sur AWS, Azure, GCP ou sur une infrastructure sur site avec la gestion des identités SPIFFE/SPIRE et maintenez la souveraineté des données où que vos données résident.",
+    "feature3_title": "Gouvernance Unifiée",
+    "feature3_description": "Convertissez les règles juridiques et de conformité en code de politique exécutable avec contrôle de version, cohérence du système distribué et éliminez les frais généraux de conformité manuelle.",
+    "feature4_title": "Exécutez rapidement des tests de référence",
+    "feature4_description": "Tests de sécurité automatiques avec les normes MedHELM et DoNOHARM, garantissant que les agents IA cliniques répondent aux exigences réglementaires avant le déploiement.",
+    "feature5_title": "Collaboration Multi-Agents",
+    "feature5_description": "Activez la collaboration sécurisée d'agents IA entre institutions sans centraliser les données, en supportant la recherche fédérée et les workflows inter-organisationnels.",
+    "feature6_title": "Construisez la Confiance des Clients",
+    "feature6_description": "Journalisation d'audit complète et suivi de lignage pour les rapports FDA, avec une traçabilité complète des données d'entraînement aux prédictions de production."
   },
   "Pricing": {
     "section_subtitle": "Fonctionnalités",
