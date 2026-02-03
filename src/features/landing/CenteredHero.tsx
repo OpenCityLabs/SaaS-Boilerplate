@@ -12,7 +12,9 @@ export const CenteredHero = (props: {
     </div>
 
     <div className="mx-auto mt-5 max-w-screen-md text-center text-xl text-muted-foreground">
-      {props.description}
+      {props.description.split('\n').map((line, index) => (
+        <div key={index}>{line}</div>
+      ))}
     </div>
 
     <div className="mt-8 flex justify-center gap-x-5 gap-y-3 max-sm:flex-col">
