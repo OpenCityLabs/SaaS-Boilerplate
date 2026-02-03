@@ -1,5 +1,6 @@
 'use client';
 
+import { Eye, EyeOff, Lock, Mail } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
@@ -11,6 +12,7 @@ export default function SignInPage() {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [twoFactorRequired, setTwoFactorRequired] = useState(false);
   const [userId, setUserId] = useState('');
@@ -106,17 +108,22 @@ export default function SignInPage() {
               <label htmlFor="code" className="block text-sm font-medium">
                 Verification Code
               </label>
-              <input
-                id="code"
-                type="text"
-                required
-                className="mt-1 block w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                placeholder="000000"
-                value={twoFactorCode}
-                onChange={e => setTwoFactorCode(e.target.value)}
-                maxLength={6}
-                pattern="[0-9]{6}"
-              />
+              <div className="relative mt-1">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                  <Lock className="size-4 text-muted-foreground" />
+                </div>
+                <input
+                  id="code"
+                  type="text"
+                  required
+                  className="block w-full rounded-md border border-input bg-background py-2 pl-10 pr-3 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                  placeholder="000000"
+                  value={twoFactorCode}
+                  onChange={e => setTwoFactorCode(e.target.value)}
+                  maxLength={6}
+                  pattern="[0-9]{6}"
+                />
+              </div>
             </div>
 
             <button
@@ -154,15 +161,20 @@ export default function SignInPage() {
               <label htmlFor="email" className="block text-sm font-medium">
                 Email address
               </label>
-              <input
-                id="email"
-                type="email"
-                required
-                className="mt-1 block w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                placeholder="you@example.com"
-                value={email}
-                onChange={e => setEmail(e.target.value)}
-              />
+              <div className="relative mt-1">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                  <Mail className="size-4 text-muted-foreground" />
+                </div>
+                <input
+                  id="email"
+                  type="email"
+                  required
+                  className="block w-full rounded-md border border-input bg-background py-2 pl-10 pr-3 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                  placeholder="you@example.com"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                />
+              </div>
             </div>
 
             <div>
@@ -177,15 +189,33 @@ export default function SignInPage() {
                   Forgot password?
                 </a>
               </div>
-              <input
-                id="password"
-                type="password"
-                required
-                className="mt-1 block w-full rounded-md border border-input bg-background px-3 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
-                placeholder="••••••••"
-                value={password}
-                onChange={e => setPassword(e.target.value)}
-              />
+              <div className="relative mt-1">
+                <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                  <Lock className="size-4 text-muted-foreground" />
+                </div>
+                <input
+                  id="password"
+                  type={showPassword ? 'text' : 'password'}
+                  required
+                  className="block w-full rounded-md border border-input bg-background px-10 py-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+                  placeholder="••••••••"
+                  value={password}
+                  onChange={e => setPassword(e.target.value)}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute inset-y-0 right-0 flex items-center pr-3 text-muted-foreground hover:text-foreground"
+                >
+                  {showPassword
+                    ? (
+                        <EyeOff className="size-4" />
+                      )
+                    : (
+                        <Eye className="size-4" />
+                      )}
+                </button>
+              </div>
             </div>
           </div>
 
