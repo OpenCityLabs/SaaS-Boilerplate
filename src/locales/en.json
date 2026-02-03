@@ -14,7 +14,7 @@
   },
   "Hero": {
     "follow_twitter": "Built for Scale",
-    "title": "The <important>Trust Layer</important> for Healthcare AI",
+    "title": "The <important>Trusted Layer</important> for Healthcare AI",
     "description": "Deploy, fine-tune, and govern clinical AI agents <strong class=\"font-bold text-foreground\">with confidence</strong>.\nEnable AI agents to collaborate with care teams at scale.\nSupports both elite engineering teams and no-code fine-tuning.",
     "primary_button": "Sign Up for the Waitlist!",
     "button_subtext": "First 100 get a free account!",
@@ -41,9 +41,9 @@
     "feature6_description": "Comprehensive audit logging and lineage tracking for FDA reporting, with complete traceability from training data to production predictions."
   },
   "Pricing": {
-    "section_subtitle": "Features",
-    "section_title": "Unlock the Full Potential of the SaaS Template",
-    "section_description": "A free and open-source landing page template for your SaaS business, built with React, TypeScript, Shadcn UI, and Tailwind CSS.",
+    "section_subtitle": "",
+    "section_title": "",
+    "section_description": "",
     "button_text": "Get Started"
   },
   "PricingPlan": {
