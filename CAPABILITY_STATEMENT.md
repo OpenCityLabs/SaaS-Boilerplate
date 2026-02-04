@@ -6,58 +6,53 @@
 
 ## What We Do
 
-AlignHealthcare.ai is a platform that enables healthcare organizations to train and deploy artificial intelligence models specifically designed for healthcare use cases — **without requiring AI expertise or coding skills**. We make advanced AI technology accessible to doctors, hospital administrators, healthcare analysts, and medical researchers who want better insights from their data.
+AlignHealthcare.ai is a platform that enables healthcare organizations to test, train/fine tune and deploy artificial intelligence models specifically designed for healthcare use cases — **without requiring AI expertise or coding skills**. We make advanced AI technology accessible to doctors, hospital administrators, healthcare analysts, and medical researchers who want better insights from their data.
 
 ---
 
 ## The Problem We Solve
 
-Healthcare organizations sit on valuable data but face critical barriers:
-- **Hiring AI experts is expensive** and time-consuming ($150K+ per data scientist)
+Healthcare organizations sit on valuable data but face critical barriers that could benefit patients and institutions:
 - **Building AI infrastructure is complex** (servers, security, compliance)
-- **Off-the-shelf AI tools don't understand healthcare** (generic chatbots can't read medical charts)
-- **Privacy concerns prevent using public AI services** (can't send patient data to ChatGPT)
-- **No way to measure if AI is actually accurate** for medical tasks
+- **Off-the-shelf AI tools don't understand healthcare** (generic chatbots struggle to synthesize context in real world environemnts)
+- **Organizations are Legitimately Concerned about Which Tech Partners to Trust with Sensitive Data**
+- *AI Models are often Blackboxes with vendors taking the attitude of "trust us," despite frequent examples of outcomes not transferring.
+-Research on efficacy can be time consuming, and expensive to test, and pilot**
 
 These barriers leave most healthcare organizations unable to benefit from AI's potential to improve patient care, reduce costs, and automate repetitive tasks.
 
 ---
 
 ## What We've Built
-
-### 1. **Train Your Own Healthcare AI Models — No Coding Required**
-- Select from **36 pre-built healthcare AI models** (ranging from general medical knowledge to specialized radiology analysis)
-- Upload your organization's data (clinical notes, patient histories, imaging reports)
-- Click "Train" and watch your AI learn from your specific healthcare context
-- Choose from four performance tiers based on speed and accuracy needs:
-  - **Free Tier** (CPU-based, perfect for testing)
-  - **Starter** (GPU-accelerated for small practices)
-  - **Professional** (High-performance for hospitals)
-  - **Enterprise** (Maximum speed for healthcare systems)
-
-### 2. **Protect Patient Privacy While Training AI**
-- **Choose your data approach:**
-  - Use **synthetic data** (computer-generated practice scenarios)
-  - Use **de-identified real data** (patient information removed)
-- All training happens in **your private cloud environment**
-- No patient data ever leaves your control
-- Built-in compliance with HIPAA and healthcare regulations
-
-### 3. **Measure AI Performance on Real Healthcare Tasks**
-- Test your AI against **healthcare-specific benchmarks**:
-  - Can it accurately answer medical questions?
-  - Can it summarize patient charts correctly?
-  - Can it identify potential drug interactions?
-- Compare your AI's performance to industry standards
+### 1. **Measure AI Performance on Real Healthcare Tasks**
+- Test your AI against >150 **healthcare-specific benchmarks** in minutes
+- All our customers can see where they stand in agregate performance to other AIs for the same task
+- Keep test results private or publish results as you want in our AI Registry
 - See exactly where your AI excels and where it needs improvement
 
-### 4. **Guided Experience from Start to Finish**
+### 2. **Train Your Own Healthcare AI Models, (Code or No Code Required)**
+- Select from **100+ pre-built open source AI models** (ranging from general purpose to medical knowledge to specialized radiology analysis), register your own model, or deploy your own
+- Upload your organization's data (clinical notes, patient histories, imaging reports)
+- Click "Train" and watch your AI learn from your specific healthcare context
+
+### 3. **We Never See your Medical Records -- Federated Analytics for Benchmarking and Train**
+- **Choose your data approach:**
+  - Use our **synthetic data generation** which grounds data in population demographics and characteristics
+  - Bring your own **de-identified real data** (patient information removed)
+  - Optionally run benchmarks or train in **your private cloud environment**
+- No patient data ever leaves your control
+- Built-in compliance with HIPAA and other healthcare regulations
+
+### 4. Leverage our Models for Comprehensive AI Governance & Safety--Alone, or Side-by-side yours
+- Research shows multi-agent approaches deliver better clinical outcomes and patient safety than single model approaches.
+-
+
+#### 5. **AI Chatbot Provides Guidance Whenever You Need It**
 - **New users get step-by-step walkthroughs** — we explain what AI training means in plain English
-- **No technical jargon** — if you can upload a document, you can train AI
 - **Live dashboard** showing training progress, performance metrics, and usage
 - **Email notifications** when your AI model is ready to use
 
-### 5. **Collaborate Across Your Organization**
+### 5. **Collaborate Across within Your Organization or Accross Organizations**
 - Invite team members (doctors, analysts, administrators)
 - Set different permission levels (who can train vs. who can only view results)
 - Track who trained which models and when
@@ -68,13 +63,13 @@ These barriers leave most healthcare organizations unable to benefit from AI's p
 ## Who Benefits
 
 ### **Hospital Systems**
-"We trained an AI to read radiology reports and flag urgent cases — it now helps our radiologists prioritize the most critical patients first."
+"We trained an AI to read radiology reports and flag urgent cases — it now helps our radiologists prioritize the most critical patients first.
 
 ### **Medical Practices**
-"Our AI automatically summarizes patient visit notes, saving our doctors 2 hours per day on documentation."
+Our AI automatically summarizes patient visit notes, saving our doctors 2 hours per day on documentation.
 
 ### **Healthcare Researchers**
-"We needed an AI that understood rare disease terminology. We trained one in 3 hours using our research database."
+We needed an AI that understood rare disease terminology. We trained one in 3 hours using our research database.
 
 ### **Medical Device Companies**
 "We use AlignHealthcare.ai to test if AI can accurately interpret data from our cardiac monitors before we deploy to hospitals."
@@ -89,7 +84,7 @@ These barriers leave most healthcare organizations unable to benefit from AI's p
 | 6-12 months to build infrastructure | Start training AI today |
 | Requires coding and AI expertise | Point, click, train — no coding |
 | Generic AI that doesn't understand healthcare | Healthcare-specific models pre-built |
-| No way to measure accuracy | Built-in healthcare benchmarks |
+| Challenging to Measure | Built-in healthcare benchmarks |
 | Send data to third-party AI services (risky) | Train privately in your own cloud |
 
 ---
