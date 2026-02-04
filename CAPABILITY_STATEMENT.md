@@ -63,16 +63,13 @@ These barriers leave most healthcare organizations unable to benefit from AI's p
 ## Who Benefits
 
 ### **Hospital Systems**
-"We trained an AI to read radiology reports and flag urgent cases — it now helps our radiologists prioritize the most critical patients first.
+-Know that AI is both an imperative in improving health outcomes, and a risk, yet they struggle to embed the human governance into the technical practice of medicine with continuous monitoring and improvement. Our platform supports the full lifecycle management, from synthetic data and testing, to population health analysis to deployments in the real world. Our platform supports the evaluation of any AI vendor that they choose to procure.
 
-### **Medical Practices**
-Our AI automatically summarizes patient visit notes, saving our doctors 2 hours per day on documentation.
+### **Medical Practices and Healthcare AI Startups**
+Smaller organizations face high startup costs and steep learning curves for AI cloud investments. HIPAA compliant cloud can sometimes require at $10K commitmant to get started. With our platform they can register their AI and run benchmarks in minutes for a low monthly subscription and pay per usage for compute and tokens that scale from zero.
 
 ### **Healthcare Researchers**
-We needed an AI that understood rare disease terminology. We trained one in 3 hours using our research database.
-
-### **Medical Device Companies**
-"We use AlignHealthcare.ai to test if AI can accurately interpret data from our cardiac monitors before we deploy to hospitals."
+Healthcare Researchers face steep learning curves, challenging access to data and IRB procedures that slows research. Many medical researchers may want to leverage AI in their research but do not have the background to run data science projects or fine tune AI models. With our platform they can generate region specific synthetic data generation, and more easily partner with healthcare organizations to access anonymized or real world data by leveraging our privacy preserving federated analytics.
 
 ---
 
