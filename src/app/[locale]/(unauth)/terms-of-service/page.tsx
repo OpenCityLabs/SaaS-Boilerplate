@@ -1,5 +1,3 @@
-import { unstable_setRequestLocale } from 'next-intl/server';
-
 import { Footer } from '@/templates/Footer';
 import { Navbar } from '@/templates/Navbar';
 
@@ -10,9 +8,7 @@ export async function generateMetadata() {
   };
 }
 
-const TermsOfServicePage = (props: { params: { locale: string } }) => {
-  unstable_setRequestLocale(props.params.locale);
-
+const TermsOfServicePage = () => {
   return (
     <>
       <Navbar />
