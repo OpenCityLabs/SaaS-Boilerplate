@@ -1,0 +1,220 @@
+{
+  "Index": {
+    "meta_title": "AlignHealthcareAI - 医疗AI的可信层",
+    "meta_description": "自信地注册、评估、部署和管理AI代理。通过让AI代理相互协作并与护理团队协作来实现更好的结果。"
+  },
+  "Navbar": {
+    "sign_in": "登录",
+    "sign_up": "注册",
+    "product": "产品",
+    "docs": "文档",
+    "blog": "博客",
+    "community": "社区",
+    "company": "公司"
+  },
+  "Hero": {
+    "follow_twitter": "为规模而建",
+    "title": "医疗AI的<important>可信层</important>",
+    "description": "注册、评估、部署并<strong class=\"font-bold text-foreground\">自信地管理</strong>AI代理。\n通过让AI代理<strong class=\"font-bold text-foreground\">相互协作并与护理团队协作</strong>来实现更好的结果。\n支持精英工程团队和无代码微调。",
+    "primary_button": "加入候补名单！",
+    "button_subtext": "前100名可获得免费账户！",
+    "secondary_button": "了解Open City Labs"
+  },
+  "Sponsors": {
+    "title": "赞助商"
+  },
+  "Features": {
+    "section_subtitle": "核心能力",
+    "section_title": "医疗保健企业级AI基础设施",
+    "section_description": "从合成数据到实际部署,通过云无关基础设施和自动化政策执行,在整个AI生命周期中保持一致的治理。",
+    "feature1_title": "微调100+模型",
+    "feature1_description": "训练和定制领先的基础模型,包括Llama、Qwen、DeepSeek和Mistral,提供无代码微调界面和预配置的临床推理模板。",
+    "feature2_title": "云无关部署",
+    "feature2_description": "在AWS、Azure、GCP或本地基础设施上部署,使用SPIFFE/SPIRE身份管理,并在数据所在的任何地方保持数据主权。",
+    "feature3_title": "统一治理",
+    "feature3_description": "将法律和合规规则转换为可执行的代码化政策,具有版本控制、分布式系统一致性,并消除手动合规开销。",
+    "feature4_title": "快速运行基准测试",
+    "feature4_description": "使用MedHELM和DoNOHARM标准进行自动安全基准测试,确保临床AI代理在部署前满足监管要求。",
+    "feature5_title": "多代理协作",
+    "feature5_description": "在不集中数据的情况下,实现跨机构的安全AI代理协作,支持联邦研究和跨组织工作流程。",
+    "feature6_title": "建立客户信任",
+    "feature6_description": "全面的审计日志和谱系跟踪用于FDA报告,从训练数据到生产预测的完整可追溯性。"
+  },
+  "Pricing": {
+    "section_subtitle": "",
+    "section_title": "",
+    "section_description": "",
+    "button_text": "开始使用"
+  },
+  "PricingPlan": {
+    "free_plan_name": "免费",
+    "premium_plan_name": "高级",
+    "enterprise_plan_name": "企业",
+    "free_plan_description": "适合个人",
+    "premium_plan_description": "适合小团队",
+    "enterprise_plan_description": "适合行业领导者",
+    "feature_team_member": "{number}名团队成员",
+    "feature_website": "{number}个网站",
+    "feature_storage": "{number} GB存储空间",
+    "feature_transfer": "{number} TB传输量",
+    "feature_email_support": "电子邮件支持",
+    "plan_interval_month": "月",
+    "plan_interval_year": "年",
+    "next_renew_date": "您的订阅将于{date}续订"
+  },
+  "FAQ": {
+    "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam enim dui, id consequat turpis ullamcorper ac. Mauris id quam dolor. Nullam eu egestas turpis. Proin risus elit, sollicitudin in mi a, accumsan euismod turpis. In euismod mi sed diam tristique hendrerit."
+  },
+  "CTA": {
+    "title": "准备部署可信AI了吗?",
+    "description": "加入医疗系统、AI初创公司和研究人员的行列,利用自动化治理和企业级基础设施构建临床AI的未来。",
+    "button_text": "加入候补名单!"
+  },
+  "Footer": {
+    "product": "产品",
+    "docs": "文档",
+    "blog": "博客",
+    "community": "社区",
+    "company": "公司",
+    "terms_of_service": "服务条款",
+    "privacy_policy": "隐私政策",
+    "designed_by": "© 2026 Open City Labs"
+  },
+  "ProtectFallback": {
+    "not_enough_permission": "您没有执行此操作的权限"
+  },
+  "SignIn": {
+    "meta_title": "登录",
+    "meta_description": "通过我们用户友好的登录流程无缝登录您的账户。"
+  },
+  "SignUp": {
+    "meta_title": "注册",
+    "meta_description": "通过我们直观的注册流程轻松创建账户。"
+  },
+  "DashboardLayout": {
+    "home": "主页",
+    "benchmarks": "基准测试",
+    "todos": "待办事项",
+    "members": "成员",
+    "billing": "账单",
+    "settings": "设置"
+  },
+  "Dashboard": {
+    "meta_title": "SaaS模板仪表板",
+    "meta_description": "为您的SaaS业务提供的免费开源着陆页模板,使用Next.js、TypeScript、Shadcn UI和Tailwind CSS构建。"
+  },
+  "DashboardIndex": {
+    "title_bar": "仪表板",
+    "title_bar_description": "欢迎来到您的仪表板",
+    "message_state_title": "让我们开始吧",
+    "message_state_description": "您可以通过编辑<code>dashboard/page.tsx</code>文件来自定义此页面",
+    "message_state_button": "在GitHub上点赞",
+    "message_state_alternative": "想要更多功能和Next.js 16的最新更新?试试<url></url>。"
+  },
+  "UserProfile": {
+    "title_bar": "用户资料",
+    "title_bar_description": "查看和管理您的用户资料"
+  },
+  "OrganizationProfile": {
+    "title_bar": "组织管理",
+    "title_bar_description": "管理您的组织"
+  },
+  "Billing": {
+    "title_bar": "账单",
+    "title_bar_description": "管理您的账单和订阅",
+    "current_section_title": "当前计划",
+    "current_section_description": "调整您的付费计划以最好地满足您的需求",
+    "manage_subscription_button": "管理订阅"
+  },
+  "BillingOptions": {
+    "current_plan": "当前计划",
+    "upgrade_plan": "开始使用"
+  },
+  "CheckoutConfirmation": {
+    "title_bar": "支付确认",
+    "message_state_title": "支付成功",
+    "message_state_description": "您的支付已成功处理。感谢您的购买!",
+    "message_state_button": "返回账单"
+  },
+  "DataTable": {
+    "no_results": "无结果。"
+  },
+  "Todos": {
+    "title_bar": "待办事项列表",
+    "title_bar_description": "查看和管理您的待办事项列表",
+    "add_todo_button": "新建待办事项"
+  },
+  "TodoTableColumns": {
+    "open_menu": "打开菜单",
+    "edit": "编辑",
+    "delete": "删除",
+    "title_header": "标题",
+    "message_header": "消息",
+    "created_at_header": "创建于"
+  },
+  "AddTodo": {
+    "title_bar": "添加待办事项",
+    "add_todo_section_title": "创建新的待办事项",
+    "add_todo_section_description": "填写下面的表单以创建新的待办事项"
+  },
+  "EditTodo": {
+    "title_bar": "编辑待办事项",
+    "edit_todo_section_title": "修改待办事项",
+    "edit_todo_section_description": "填写下面的表单以编辑待办事项"
+  },
+  "TodoForm": {
+    "title_label": "标题",
+    "title_description": "为您的待办事项输入描述性标题。",
+    "message_title": "消息",
+    "message_description": "为您的待办事项输入详细消息。",
+    "submit_button": "提交"
+  },
+  "Benchmarks": {
+    "title": "AI基准测试",
+    "description": "跨医疗、学术和生物医学基准进行全面评估",
+    "select_benchmarks": "选择基准测试",
+    "select_model": "选择模型",
+    "sample_limit": "样本限制",
+    "run_benchmarks": "运行基准测试",
+    "running": "运行中..."
+  },
+  "BenchmarkSelector": {
+    "quick_select": "快速选择",
+    "bigbio_subcategories": "BigBIO任务类型",
+    "detailed_selection": "详细选择",
+    "selection_summary": "选择摘要",
+    "none_selected": "未选择基准测试",
+    "bigbio_info": "选择上面的BigBIO子类别或使用'BigBIO (20)'快速选择按钮来运行所有20个基准测试。"
+  },
+  "ModelSelector": {
+    "loading": "加载模型中...",
+    "error": "加载模型时出错",
+    "select_placeholder": "选择一个模型"
+  },
+  "BenchmarkProgress": {
+    "title": "基准测试进度",
+    "progress": "进度",
+    "started_at": "开始时间",
+    "completed_at": "完成时间",
+    "running": "运行中",
+    "completed": "已完成",
+    "failed": "失败",
+    "running_message": "基准测试正在运行中。这可能需要几分钟...",
+    "completed_message": "所有基准测试成功完成!",
+    "failed_message": "基准测试运行失败。请重试。"
+  },
+  "BenchmarkResults": {
+    "title": "结果",
+    "benchmark": "基准测试",
+    "model": "模型",
+    "score": "分数",
+    "accuracy": "准确度",
+    "timestamp": "时间戳",
+    "show_history": "显示历史",
+    "hide_history": "隐藏历史",
+    "export_csv": "导出CSV",
+    "export_json": "导出JSON",
+    "no_results": "暂无结果。运行基准测试以查看结果。"
+  }
+}

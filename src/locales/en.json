@@ -1,7 +1,7 @@
 {
   "Index": {
     "meta_title": "AlignHealthcareAI - The Trusted Layer for Healthcare AI",
-    "meta_description": "Deploy, fine-tune, and govern clinical AI agents with confidence. Built for scale with cloud-agnostic infrastructure and automated policy enforcement."
+    "meta_description": "Register, benchmark, deploy and govern AI agents with confidence. Achieve better outcomes by enabling AI agents to collaborate with one another and care teams."
   },
   "Navbar": {
     "sign_in": "Sign In",
@@ -15,7 +15,7 @@
   "Hero": {
     "follow_twitter": "Built for Scale",
     "title": "The <important>Trusted Layer</important> for Healthcare AI",
-    "description": "Deploy, fine-tune, and govern clinical AI agents <strong class=\"font-bold text-foreground\">with confidence</strong>.\nEnable AI agents to collaborate with care teams at scale.\nSupports both elite engineering teams and no-code fine-tuning.",
+    "description": "Register, benchmark, deploy and <strong class=\"font-bold text-foreground\">govern</strong> AI agents <strong class=\"font-bold text-foreground\">with confidence</strong>.\nAchieve better outcomes by enabling AI agents to collaborate with <strong class=\"font-bold text-foreground\">one another and care teams</strong>.\nSupports both elite engineering teams and no-code fine-tuning.",
     "primary_button": "Sign Up for the Waitlist!",
     "button_subtext": "First 100 get a free account!",
     "secondary_button": "Learn About Open City Labs"

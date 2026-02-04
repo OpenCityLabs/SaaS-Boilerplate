@@ -1,7 +1,7 @@
 {
   "Index": {
     "meta_title": "AlignHealthcareAI - La Couche de Confiance pour l'IA de Santé",
-    "meta_description": "Déployez, affinez et gouvernez les agents IA cliniques en toute confiance. Conçu pour l'échelle avec une infrastructure agnostique au cloud et une application automatique des politiques."
+    "meta_description": "Enregistrez, évaluez, déployez et gouvernez les agents IA en toute confiance. Obtenez de meilleurs résultats en permettant aux agents IA de collaborer entre eux et avec les équipes de soins."
   },
   "Navbar": {
     "sign_in": "Se connecter",
@@ -15,7 +15,7 @@
   "Hero": {
     "follow_twitter": "Conçu pour l'Échelle",
     "title": "La Couche de <important>Confiance</important> pour l'IA de Santé",
-    "description": "Déployez, affinez et gouvernez les agents IA cliniques <strong class=\"font-bold text-foreground\">en toute confiance</strong>.\nPermettez aux agents IA de collaborer avec les équipes de soins à grande échelle.\nSupporte les équipes d'ingénierie d'élite et l'affinage sans code.",
+    "description": "Enregistrez, évaluez, déployez et <strong class=\"font-bold text-foreground\">gouvernez</strong> les agents IA <strong class=\"font-bold text-foreground\">en toute confiance</strong>.\nObtenez de meilleurs résultats en permettant aux agents IA de collaborer <strong class=\"font-bold text-foreground\">entre eux et avec les équipes de soins</strong>.\nSupporte les équipes d'ingénierie d'élite et l'affinage sans code.",
     "primary_button": "Inscrivez-vous sur la liste d'attente!",
     "button_subtext": "Les 100 premiers obtiennent un compte gratuit!",
     "secondary_button": "En savoir plus sur Open City Labs"
@@ -67,8 +67,8 @@
     "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam aliquam enim dui, id consequat turpis ullamcorper ac. Mauris id quam dolor. Nullam eu egestas turpis. Proin risus elit, sollicitudin in mi a, accumsan euismod turpis. In euismod mi sed diam tristique hendrerit."
   },
   "CTA": {
-    "title": "Vous êtes prêt?",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "title": "Prêt à Déployer une IA Fiable?",
+    "description": "Rejoignez les systèmes de santé, les startups d'IA et les chercheurs qui construisent l'avenir de l'IA clinique avec une gouvernance automatisée et une infrastructure de niveau entreprise.",
     "button_text": "Inscrivez-vous sur la liste d'attente!"
   },
   "Footer": {
@@ -79,7 +79,7 @@
     "company": "Entreprise",
     "terms_of_service": "Conditions d'utilisation",
     "privacy_policy": "Politique de confidentialité",
-    "designed_by": "Designé by <author></author>."
+    "designed_by": "© 2026 Open City Labs"
   },
   "ProtectFallback": {
     "not_enough_permission": "Vous n'avez pas les permissions pour effectuer cette action"
