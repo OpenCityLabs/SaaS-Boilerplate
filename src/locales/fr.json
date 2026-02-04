@@ -1,7 +1,7 @@
 {
   "Index": {
-    "meta_title": "SaaS Template - Le template SaaS parfait pour construire et mettre à l'échelle votre entreprise en toute simplicité.",
-    "meta_description": "Un template gratuit et open-source de landing page pour votre entreprise SaaS, construit avec React, TypeScript, Shadcn UI et Tailwind CSS."
+    "meta_title": "AlignHealthcareAI - La Couche de Confiance pour l'IA de Santé",
+    "meta_description": "Déployez, affinez et gouvernez les agents IA cliniques en toute confiance. Conçu pour l'échelle avec une infrastructure agnostique au cloud et une application automatique des politiques."
   },
   "Navbar": {
     "sign_in": "Se connecter",
