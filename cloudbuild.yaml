@@ -10,7 +10,7 @@ steps:
       - --build-arg
       - 'NEXT_PUBLIC_APP_URL=https://alignhealthcare.ai'
       - --build-arg
-      - 'NEXT_PUBLIC_API_URL=https://api.alignhealthcare.ai'
+      - 'NEXT_PUBLIC_API_URL=https://api.ocl.network'
       - -t
       - 'gcr.io/$PROJECT_ID/alignhealthcare:$BUILD_ID'
       - -t
@@ -54,7 +54,7 @@ steps:
       - --timeout
       - '300'
       - --set-env-vars
-      - 'NEXT_PUBLIC_APP_URL=https://alignhealthcare.ai,NEXT_PUBLIC_API_URL=https://api.alignhealthcare.ai,NODE_ENV=production,MONGODB_URI=mongodb://placeholder:27017/placeholder,MONGODB_DATABASE=placeholder'
+      - 'NEXT_PUBLIC_APP_URL=https://alignhealthcare.ai,NEXT_PUBLIC_API_URL=https://api.ocl.network,PYTHON_API_URL=https://api.ocl.network,NODE_ENV=production,MONGODB_URI=mongodb://placeholder:27017/placeholder,MONGODB_DATABASE=placeholder'
 
 images:
   - 'gcr.io/$PROJECT_ID/alignhealthcare:$BUILD_ID'
